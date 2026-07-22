@@ -19,6 +19,7 @@ import {
   Landmark,
 } from 'lucide-react';
 import { businessInfo } from '../../constants/business';
+import { images } from '../../constants/images';
 import { materials } from '../../data/materials';
 import {
   services,
@@ -66,8 +67,8 @@ const Home = () => {
       <section className="hero" aria-labelledby="hero-heading">
         <div className="hero__media" aria-hidden="true">
           <img
-            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1800&q=80"
-            alt=""
+            src={images.hero}
+            alt="Construction workers at a building site in India"
             className="hero__image"
           />
           <div className="hero__overlay" />
@@ -125,8 +126,8 @@ const Home = () => {
         <div className="container about-preview__grid">
           <div className="about-preview__media">
             <img
-              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1000&q=80"
-              alt="Construction materials at a worksite"
+              src={images.aboutPreview}
+              alt="Construction workers on a building site in India"
               loading="lazy"
             />
           </div>

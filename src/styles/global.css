@@ -183,7 +183,7 @@ main {
   padding: calc(var(--header-height) + var(--space-3xl)) 0 var(--space-3xl);
   background:
     linear-gradient(135deg, rgba(20, 40, 64, 0.92) 0%, rgba(30, 58, 95, 0.88) 55%, rgba(194, 120, 3, 0.35) 100%),
-    url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80')
+    url('https://images.unsplash.com/photo-1708067296964-3e31bde76787?auto=format&fit=crop&w=1600&q=80')
       center / cover no-repeat;
   color: var(--text-inverse);
   overflow: hidden;

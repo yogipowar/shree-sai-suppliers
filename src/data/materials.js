@@ -1,3 +1,5 @@
+import { images } from '../constants/images';
+
 export const materials = [
   {
     id: 'crusher-material',
@@ -13,8 +15,7 @@ export const materials = [
       'Infrastructure projects',
       'Filling & leveling',
     ],
-    image:
-      'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+    image: images.crusherMaterial,
   },
   {
     id: 'stone-dust',
@@ -30,8 +31,7 @@ export const materials = [
       'Filling',
       'Landscaping',
     ],
-    image:
-      'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&q=80',
+    image: images.stoneDust,
   },
   {
     id: 'aggregate-10mm',
@@ -47,8 +47,7 @@ export const materials = [
       'Flooring',
       'General building',
     ],
-    image:
-      'https://images.unsplash.com/photo-1590496793929-36417d3117ba?w=800&q=80',
+    image: images.aggregate10,
   },
   {
     id: 'aggregate-20mm',
@@ -64,8 +63,7 @@ export const materials = [
       'Commercial buildings',
       'Infrastructure',
     ],
-    image:
-      'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80',
+    image: images.aggregate20,
   },
   {
     id: 'aggregate-40mm',
@@ -81,8 +79,7 @@ export const materials = [
       'Large foundations',
       'Infrastructure',
     ],
-    image:
-      'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80',
+    image: images.aggregate40,
   },
   {
     id: 'gsb',
@@ -98,8 +95,7 @@ export const materials = [
       'Highway projects',
       'Infrastructure',
     ],
-    image:
-      'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=80',
+    image: images.gsb,
   },
   {
     id: 'm-sand',
@@ -115,8 +111,7 @@ export const materials = [
       'Masonry',
       'Building construction',
     ],
-    image:
-      'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&q=80',
+    image: images.mSand,
   },
   {
     id: 'river-sand',
@@ -132,8 +127,7 @@ export const materials = [
       'Brickwork',
       'General construction',
     ],
-    image:
-      'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80',
+    image: images.riverSand,
   },
   {
     id: 'cement',
@@ -149,8 +143,7 @@ export const materials = [
       'Plastering',
       'Commercial projects',
     ],
-    image:
-      'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=80',
+    image: images.cement,
   },
   {
     id: 'bricks',
@@ -166,8 +159,7 @@ export const materials = [
       'Commercial structures',
       'Partition walls',
     ],
-    image:
-      'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    image: images.bricks,
   },
 ];
 

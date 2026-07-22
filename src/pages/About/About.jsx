@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Target, Eye, Heart, ShieldCheck, Truck, Award } from 'lucide-react';
 import { businessInfo } from '../../constants/business';
+import { images } from '../../constants/images';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import CTASection from '../../components/CTASection/CTASection';
 import Button from '../../components/Button/Button';
@@ -55,8 +56,8 @@ const About = () => {
         <div className="container about-intro">
           <div className="about-intro__media">
             <img
-              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1000&q=80"
-              alt="Construction site materials"
+              src={images.aboutPage}
+              alt="Construction worker with machinery at an Indian site"
               loading="lazy"
             />
           </div>

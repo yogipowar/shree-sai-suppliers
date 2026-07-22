@@ -1,3 +1,5 @@
+import { images } from '../constants/images';
+
 export const services = [
   {
     id: 'material-supply',
@@ -12,8 +14,7 @@ export const services = [
       'Support for builders and contractors',
       'Flexible order quantities',
     ],
-    image:
-      'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+    image: images.materialSupply,
   },
   {
     id: 'bulk-supply',
@@ -28,8 +29,7 @@ export const services = [
       'Competitive bulk pricing',
       'Dedicated coordination support',
     ],
-    image:
-      'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80',
+    image: images.bulkSupply,
   },
   {
     id: 'project-based',
@@ -44,8 +44,7 @@ export const services = [
       'Project-specific coordination',
       'Reduced material delays',
     ],
-    image:
-      'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80',
+    image: images.projectBased,
   },
   {
     id: 'delivery-support',
@@ -60,8 +59,7 @@ export const services = [
       'Clear communication',
       'Flexible scheduling',
     ],
-    image:
-      'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
+    image: images.deliverySupport,
   },
   {
     id: 'customized',
@@ -76,8 +74,7 @@ export const services = [
       'Grade-specific supply',
       'Responsive assistance',
     ],
-    image:
-      'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&q=80',
+    image: images.customized,
   },
 ];
 
@@ -147,38 +144,32 @@ export const industries = [
   {
     id: 'residential',
     title: 'Residential Construction',
-    image:
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+    image: images.residential,
   },
   {
     id: 'commercial',
     title: 'Commercial Construction',
-    image:
-      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80',
+    image: images.commercial,
   },
   {
     id: 'road',
     title: 'Road Construction',
-    image:
-      'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=80',
+    image: images.road,
   },
   {
     id: 'infrastructure',
     title: 'Infrastructure Projects',
-    image:
-      'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80',
+    image: images.infrastructure,
   },
   {
     id: 'real-estate',
     title: 'Real Estate Projects',
-    image:
-      'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80',
+    image: images.realEstate,
   },
   {
     id: 'industrial',
     title: 'Industrial Projects',
-    image:
-      'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+    image: images.industrial,
   },
 ];
 
