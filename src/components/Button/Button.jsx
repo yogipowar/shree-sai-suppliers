@@ -18,7 +18,7 @@ const Button = ({
 
   if (to) {
     return (
-      <Link to={to} className={classes} aria-label={ariaLabel} {...rest}>
+      <Link to={to} className={classes} aria-label={ariaLabel} onClick={onClick} {...rest}>
         {children}
       </Link>
     );
