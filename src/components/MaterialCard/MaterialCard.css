@@ -1,0 +1,88 @@
+.material-card {
+  background-color: var(--white);
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition:
+    box-shadow var(--transition-base),
+    transform var(--transition-base),
+    border-color var(--transition-base);
+}
+
+.material-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+  border-color: var(--border-color);
+}
+
+.material-card__image-wrap {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background-color: var(--background-section);
+}
+
+.material-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.material-card:hover .material-card__image {
+  transform: scale(1.05);
+}
+
+.material-card__category {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  background-color: var(--primary-dark);
+  color: var(--white);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.6rem;
+}
+
+.material-card__body {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.material-card__title {
+  font-size: 1.15rem;
+  margin-bottom: var(--space-sm);
+  text-transform: uppercase;
+}
+
+.material-card__desc {
+  font-size: 0.9375rem;
+  margin-bottom: var(--space-md);
+  flex: 1;
+}
+
+.material-card__apps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: var(--space-lg);
+}
+
+.material-card__apps li {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background-color: var(--background-light);
+  padding: 0.25rem 0.55rem;
+  border: 1px solid var(--border-light);
+}
+
+.material-card__btn {
+  align-self: flex-start;
+}

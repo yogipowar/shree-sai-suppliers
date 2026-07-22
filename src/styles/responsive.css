@@ -1,0 +1,36 @@
+/* Tablet */
+@media (max-width: 992px) {
+  :root {
+    --header-height: 72px;
+    --space-3xl: 3.5rem;
+    --space-4xl: 4.5rem;
+  }
+
+  .container {
+    padding-inline: var(--space-md);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 64px;
+    --space-3xl: 2.75rem;
+    --space-4xl: 3.5rem;
+  }
+
+  body {
+    font-size: 0.95rem;
+  }
+
+  .section {
+    padding-block: var(--space-2xl);
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .container {
+    padding-inline: var(--space-md);
+  }
+}
