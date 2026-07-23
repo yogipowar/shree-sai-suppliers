@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, HardHat } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 import { businessInfo, navLinks } from '../../constants/business';
 import Button from '../Button/Button';
 import './Header.css';
@@ -94,13 +94,19 @@ const Header = () => {
       <header className={`header ${scrolled ? 'header--scrolled' : ''}`}>
         <div className="container header__inner">
           <Link to="/" className="header__logo" aria-label={`${businessInfo.name} home`}>
-            <span className="header__logo-icon" aria-hidden="true">
+            {/* <span className="header__logo-icon" aria-hidden="true">
               <HardHat size={28} strokeWidth={2} />
             </span>
             <span className="header__logo-text">
               <span className="header__logo-name">{businessInfo.name}</span>
               <span className="header__logo-tag">Construction Materials</span>
-            </span>
+            </span> */}
+
+            <img
+              src={`${import.meta.env.BASE_URL}shree-sai-supplier-logo.png`}
+              alt={businessInfo.name}
+              className="header__logo-image"
+            />
           </Link>
 
           <nav className="header__nav" aria-label="Primary">

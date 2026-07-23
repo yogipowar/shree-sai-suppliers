@@ -35,6 +35,12 @@
   min-width: 0;
 }
 
+.header__logo-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
 .header__logo-icon {
   display: flex;
   align-items: center;
