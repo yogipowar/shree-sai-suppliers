@@ -68,7 +68,7 @@ const Home = () => {
         <div className="hero__media" aria-hidden="true">
           <img
             src={images.hero}
-            alt="Construction workers at a building site in India"
+            alt="Clean construction site with materials and equipment"
             className="hero__image"
           />
           <div className="hero__overlay" />
@@ -267,7 +267,7 @@ const Home = () => {
                 <article key={industry.id} className="industry-card">
                   <img
                     src={industry.image}
-                    alt=""
+                    alt={industry.title}
                     className="industry-card__image"
                     loading="lazy"
                   />
@@ -291,19 +291,43 @@ const Home = () => {
             subtitle="Experienced leadership committed to quality supply and customer service."
           />
           <div className="leadership-grid">
-            <article className="leader-card">
-              <div className="leader-card__photo" aria-hidden="true">
-                <span>{businessInfo.founder.charAt(0)}</span>
+            <article className="leader-profile">
+              <div className="leader-profile__photo">
+                <img
+                  src={images.founder}
+                  alt={businessInfo.founder}
+                  loading="lazy"
+                />
               </div>
-              <h3>{businessInfo.founder}</h3>
-              <p className="leader-card__role">{businessInfo.founderTitle}</p>
+              <div className="leader-profile__info">
+                <p className="leader-profile__role">{businessInfo.founderTitle}</p>
+                <h3 className="leader-profile__name">{businessInfo.founder}</h3>
+                <p className="leader-profile__note">
+                  Leading quality supply and customer-first service for
+                  construction projects.
+                </p>
+              </div>
             </article>
-            <article className="leader-card">
-              <div className="leader-card__photo" aria-hidden="true">
-                <span>{businessInfo.managementDirector.charAt(0)}</span>
+            <article className="leader-profile">
+              <div className="leader-profile__photo">
+                <img
+                  src={images.managementDirector}
+                  alt={businessInfo.managementDirector}
+                  loading="lazy"
+                />
               </div>
-              <h3>{businessInfo.managementDirector}</h3>
-              <p className="leader-card__role">{businessInfo.managementTitle}</p>
+              <div className="leader-profile__info">
+                <p className="leader-profile__role">
+                  {businessInfo.managementTitle}
+                </p>
+                <h3 className="leader-profile__name">
+                  {businessInfo.managementDirector}
+                </h3>
+                <p className="leader-profile__note">
+                  Focused on reliable operations, timely supply, and project
+                  coordination.
+                </p>
+              </div>
             </article>
           </div>
         </div>

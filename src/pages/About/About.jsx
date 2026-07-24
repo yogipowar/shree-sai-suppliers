@@ -167,19 +167,43 @@ const About = () => {
             subtitle="The leadership behind Shree Sai Suppliers."
           />
           <div className="about-leaders">
-            <article className="about-leader">
-              <div className="about-leader__photo" aria-hidden="true">
-                <span>{businessInfo.founder.charAt(0)}</span>
+            <article className="leader-profile">
+              <div className="leader-profile__photo">
+                <img
+                  src={images.founder}
+                  alt={businessInfo.founder}
+                  loading="lazy"
+                />
               </div>
-              <h3>{businessInfo.founder}</h3>
-              <p>{businessInfo.founderTitle}</p>
+              <div className="leader-profile__info">
+                <p className="leader-profile__role">{businessInfo.founderTitle}</p>
+                <h3 className="leader-profile__name">{businessInfo.founder}</h3>
+                <p className="leader-profile__note">
+                  Leading quality supply and customer-first service for
+                  construction projects.
+                </p>
+              </div>
             </article>
-            <article className="about-leader">
-              <div className="about-leader__photo" aria-hidden="true">
-                <span>{businessInfo.managementDirector.charAt(0)}</span>
+            <article className="leader-profile">
+              <div className="leader-profile__photo">
+                <img
+                  src={images.managementDirector}
+                  alt={businessInfo.managementDirector}
+                  loading="lazy"
+                />
               </div>
-              <h3>{businessInfo.managementDirector}</h3>
-              <p>{businessInfo.managementTitle}</p>
+              <div className="leader-profile__info">
+                <p className="leader-profile__role">
+                  {businessInfo.managementTitle}
+                </p>
+                <h3 className="leader-profile__name">
+                  {businessInfo.managementDirector}
+                </h3>
+                <p className="leader-profile__note">
+                  Focused on reliable operations, timely supply, and project
+                  coordination.
+                </p>
+              </div>
             </article>
           </div>
           <div className="section-cta">
